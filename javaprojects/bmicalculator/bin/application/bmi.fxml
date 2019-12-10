@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.bmiController">
+   <children>
+      <Label alignment="CENTER" layoutX="112.0" layoutY="71.0" prefHeight="17.0" prefWidth="271.0" text="BODY MASS INDEX APP " />
+      <Label layoutX="35.0" layoutY="115.0" prefHeight="17.0" prefWidth="105.0" text="YOUR HEIGHT" />
+      <Label layoutX="32.0" layoutY="165.0" prefHeight="17.0" prefWidth="111.0" text="YOUR WEIGHT" />
+      <Label layoutX="32.0" layoutY="215.0" prefHeight="17.0" prefWidth="105.0" text="BMI OUTPUT" />
+      <TextField fx:id="txtfieldH" layoutX="181.0" layoutY="120.0" prefHeight="25.0" prefWidth="174.0" promptText="Height in meters" />
+      <TextField fx:id="txtfieldWeight" layoutX="181.0" layoutY="170.0" prefHeight="25.0" prefWidth="174.0" promptText="Weight in KiloGrams" />
+      <Button fx:id="bmiOutp" alignment="TOP_LEFT" contentDisplay="BOTTOM" layoutX="178.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="174.0" text="your answer here">
+         <effect>
+            <InnerShadow choke="0.26" color="#4883b8" radius="23.3425" width="74.37" />
+         </effect></Button>
+      <Button fx:id="btnDisplayBmi" layoutX="207.0" layoutY="320.0" mnemonicParsing="false" onAction="#calculate" onMouseExited="#hoover" onMouseMoved="#hoover" style="-fx-background-color: green;" text="Calculate Bmi" textFill="#d6d6d6">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnRset" layoutX="115.0" layoutY="320.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: yellow;" text="Reset" textFill="#1020d7">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnExit" layoutX="320.0" layoutY="320.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TabPane layoutX="446.0" layoutY="126.0" prefHeight="237.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutY="28.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutY="41.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="32.0" layoutY="260.0" prefHeight="17.0" prefWidth="71.0" text="BODY LEVEL" />
+      <Button fx:id="bmiEff" layoutX="178.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="174.0">
+         <effect>
+            <InnerShadow choke="0.1" color="#2bf802" height="35.83" radius="16.6725" width="32.86" />
+         </effect></Button>
+      <ImageView fitHeight="110.0" fitWidth="126.0" layoutX="499.0" layoutY="9.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../../Desktop/icons/bmi3.png" />
+         </image>
+         <effect>
+            <DropShadow color="#d6dad2" height="32.86" radius="10.74" width="12.1" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
