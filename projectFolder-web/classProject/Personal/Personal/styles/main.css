@@ -1,0 +1,88 @@
+body{
+     line-height: 1.7;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     background-color: darkmagenta;
+     color: #222;
+}
+.page{
+     background-color: white;
+     width: 80%;
+     margin: 5.1rem auto;
+}
+.hero-img{
+     max-width: 100%;
+}
+.menu{
+     display: flex;
+     flex-wrap: wrap ; 
+     /* this will make child element stack 
+     on top of each other if no space available*/
+     background-color: rgb(223, 192, 18);
+}
+.logo{
+     /* push all to the right side */
+     margin-right: auto;
+}
+.hero{
+     position: relative;
+}
+.hero-title{
+     position: absolute;
+     top: 5% ;
+     left: 50%;
+     width: 80%;
+     transform: translate(-50% , -50%);
+     color: white;
+     text-align: center;
+     font-size: 2.4rem;
+     background-color: goldenrod;
+}
+.sec{
+     padding: 5.1rem 1.7rem;
+
+}
+
+.menu a{
+text-decoration: none;
+color: white;
+padding: 1rem;
+}
+.page-footer{
+     background-color: darkgoldenrod;
+     color: rgb(32, 218, 72);  
+     padding: 2.5rem;
+     text-align: center;
+
+}
+img{
+     max-width: 100%; 
+}
+.row{
+     /* outline: 2px solid blue;
+     padding: 1rem; */
+     display: flex;
+     margin-left: -1.7em;
+     margin-bottom: -7em;
+     flex-wrap: wrap;
+}
+.col.is-half{
+     flex-basis: calc(50% - 1.7rem) ;
+     width: 50%;
+}
+
+.col.is-third{
+     flex-basis: calc(33.333%- 1.7rem) ;
+     width: 50%;
+}
+.col.is-two-third{
+     flex-basis: calc(66.333%- 1.7rem) ;
+     width: 50%;
+}
+.col{
+     /* outline: 2px solid brown; */
+     flex : 1 ; 
+     /* make the colums equal */
+     margin-left: 1.7em;
+     margin-bottom: 1.7em;
+
+}
