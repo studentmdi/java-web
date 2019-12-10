@@ -1,0 +1,115 @@
+/**
+ * Quick Reset and base typo
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 112%;
+  line-height: 1.7;
+  color: #1a1a1a;
+  background-color: #fff;
+}
+/* note image , ancho , inline, inputs element width: 100%  default */
+
+/**
+ * Component styles below
+ */
+.under-cons__item--details h4{
+  padding-top: 28PX;
+  width: 100px;
+  height:90px;
+  background-color: crimson;
+  display: inline-block;
+  font-size: 1.6em;
+ 
+}
+.circle{
+  width: 200px;
+  height: 200px;
+  border: 5px solid green;
+  
+}
+.under-cons__item--details p :nth-child(2){
+  width: 25em;
+  
+}
+.under-cons{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b7cf1b;
+}
+
+.under-cons__item--details{
+  background-color: #1a1a1a;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  margin-top: 0px;
+  clip-path: polygon(0% 0%, 0% 100% , 100% 80%,100% 10%);
+}
+
+
+.list{
+  width: 200px;
+  height:200px;
+  border: 3px solid blue;
+  border-radius: 100%;
+  list-style: none;
+  padding: 2px;
+}
+/* .under-cons__item .under-cons__item--timer{
+ 
+} */
+@media screen and (min-width:700px){
+  .under-cons{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: dimgray;
+  }
+  .under-cons__item--details{
+    background-color: #8810b4;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    margin-right: 32px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+   
+  }
+}
+
+
+@media screen and (min-width:800px){
+  .under-cons{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: dimgray;
+    margin: 0px auto ;
+
+  }
+  .under-cons__item--details{
+    background-color: rgb(241, 76, 103);
+    margin-right: 32px;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+    clip-path: polygon(0% 0%, 0% 100% , 80% 100%,100% 0%);
+  }
+
+}
