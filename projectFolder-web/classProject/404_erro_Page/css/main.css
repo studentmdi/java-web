@@ -1,0 +1,87 @@
+/**
+ * Quick Reset and base typo
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 112%;
+  line-height: 1.7;
+  color: #1a1a1a;
+  background-color: #fff;
+}
+/* note image , ancho , inline, inputs element width: 100%  default */
+
+/**
+ * Component styles below
+ **/
+
+
+.error-media__image{
+width: 200px;
+height: 200px;
+clip-path: circle(50% at 50% 50%)
+}
+.error{
+  text-align: center;
+  height: 100vh;
+}
+@media screen and (min-width:800px){
+.error{
+  display: flex; 
+  /* horizontal alignment */
+  justify-content: center; 
+  /* vertical alignment */
+  align-items: center;
+
+  }
+.cta{
+  color: #38c415;
+  text-transform: lowercase;
+}
+.error-details{
+  flex-basis: 50%;
+}
+}
+
+
+
+.cta{
+border: 1px solid black;
+border-radius: 50px;
+padding:0.2rem 0.8rem;
+text-decoration: none;
+display: inline-block;
+margin-bottom: 2em;
+}
+.title{
+ margin: 0;
+}
+.title span:first-child{
+  text-transform: uppercase;
+  display: block;
+  /* font-size: 3rem; */
+}
+.title span:last-child{
+  font-size: 9rem;
+  line-height: 1;
+}
+body{
+  background-color: gold;
+  margin: 0;
+}
+
+@media screen and (min-width:600px){
+  body{
+   background-color: #38c415;
+   color: white;
+  }
+  .cta{
+  color: white;
+  }
+  }
