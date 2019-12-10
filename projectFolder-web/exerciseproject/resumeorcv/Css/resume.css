@@ -1,0 +1,135 @@
+body{
+     background-color: grey;
+      color: white;
+      margin: 0px auto;
+    
+}
+.skill{
+     background-color: darkolivegreen
+}
+.academ{
+     background-color: darkslategray
+}
+.academ a{
+     color: coral;
+     text-decoration: none;
+}
+.employ{
+     background-color: olivedrab
+}
+.hobby{
+     text-align: center;
+}
+.hobby :nth-child(even){
+color: indianred
+}
+.hobby :nth-child(2){
+color: deeppink
+}
+.hobby :nth-child(3){
+color: blueviolet;
+}
+.resume{
+     margin-left: 150px;
+    
+     /* margin-right: 12px; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column; 
+     text-align: center;
+}
+.aim{
+     color: goldenrod;
+     font-size: 1.1em;
+}
+.cv{
+     color: crimson;
+     font-size: 1.5em
+}
+.resume-header{
+   text-align: center;
+   color: orangered;
+}
+.nav{
+     
+     margin-bottom: 12px;
+     display: flex;
+     /* outline: 2px solid red; */
+     margin-right: 900px;
+     position: sticky;
+     top: 0;
+}
+
+.row-resume {
+     text-align: center;
+     color: blue;
+}
+.nav-items{
+     text-align: center;
+     margin-top: 14px;
+     /* background-color: olive; */
+     margin-left: 3px;
+   
+}
+.nav-items a{
+     display: block;
+     padding: 19px;
+     text-decoration: none;
+     font-size: 1.1em;
+     color: white;
+     border: 2px solid white;
+     margin-bottom: 9px
+}
+.nav-items :nth-child(1){
+     color: red
+}
+.nav-items :nth-child(2){
+     color: green
+}
+.nav-items :nth-child(3){
+     color: brown
+}
+.nav-items :nth-child(4){
+     color: black
+}
+.nav-items :nth-child(5){
+     color: blue
+}
+.row{
+     display: flex;
+   width: 90%;
+   text-align: left
+}
+
+#img{
+     text-align: center;
+     margin-bottom: -340px;
+     margin-top: 5em;
+}
+.CV_img{
+     width: 200px;
+     height: 170px;
+     border-radius: 100%
+}
+footer{
+     width: 100%;
+     height: 7em;
+     background-color: darkgray;
+     text-align: center;
+     color: white;
+     padding-top: 5em;
+     margin-top: 20px;
+}
+
+.col{
+     flex: 1;
+     margin: 12px 12px;
+}
+.col2{
+     flex: 1
+}
+.doc1{
+     width: 200px;
+     height:100px ;
+}
