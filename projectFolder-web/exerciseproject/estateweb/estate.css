@@ -1,0 +1,96 @@
+.row{
+     display: flex;
+     flex-direction: row;
+}
+
+
+.header-logo{
+  text-align: center;
+
+}
+
+.col-p{
+     color: rgb(184, 83, 16);
+     font-size: 18px;
+   
+}
+p{
+     color: rgb(6, 124, 144)
+}
+.col{
+     flex: 1;
+     margin:  6PX;
+}
+div{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+body{
+margin: 0;
+padding: 0;
+background-color: darkgrey
+/* background-image:url(es4.jpg);
+background-repeat:no-repeat; */
+
+}
+.customers{
+     border-radius: 100%;
+     width: 100px;
+     height: 100px;
+   }
+div .imgploy{
+     border-radius: 100%;
+     width: 150px;
+     height: 150px;
+     transform: rotate(50deg)
+/* clip-path: polygon( 50% 0%, 90% 20%, 100% 60%, 81% 100%, 25% 100%, 0% 60%, 10% 20%); */
+
+}
+div .imgploy:hover{
+
+  transform: rotate(0deg)
+}
+div #slider{
+     width:50% 
+}
+div img{
+     width: 100% 
+}
+
+.h3{
+     text-align: center
+}
+
+nav{
+     position: sticky;
+     top: 0;
+     margin-bottom: 2em;
+     text-align: center;
+     margin-top: 0.7em;
+     height: 2em
+    
+}
+
+div h5{
+     color: crimson;
+     font-size: 1.5em;
+}
+nav a{
+     color: darkorange;
+     padding: 1em;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 12px;
+
+}
+.col a{
+     text-decoration: none;
+     font-size: 1.4em;
+     padding: 16px;
+     background-color: chocolate;
+     height: 12px;
+     border-radius: 13px;
+}
