@@ -1,0 +1,25 @@
+#selection{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+#redDiv{
+width: 50%;
+height: 100px;
+background-color: red;
+visibility: hidden;
+}
+#blueDiv{
+     width: 50%;
+     background-color: blue; 
+     height: 100px;
+     visibility: hidden;
+}
+#greenDiv{
+width: 50%;
+background-color: green;
+height: 100px;
+visibility: hidden;
+}
